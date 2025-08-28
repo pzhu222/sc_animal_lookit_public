@@ -1,0 +1,511 @@
+{
+    "frames": {
+        "video-config": {
+            "kind": "exp-video-config"
+        },
+        "loading": {
+            "kind": "exp-lookit-images-audio",
+            "audio": "welcome_SCAnimal",
+            "images": [
+                {
+                    "id": "frame1",
+                    "src": "welcome_SCAnimal_noloop.gif",
+                    "position": "fill"
+                },
+                {
+                    "id": "frame2",
+                    "src": "mousecheck_part1_SCAnimal_noloop.gif",
+                    "position": "fill"
+                },
+                {
+                    "id": "frame3",
+                    "src": "mousecheck_part2_SCAnimal_noloop.gif",
+                    "position": "fill"
+                },
+                {
+                    "id": "frame4",
+                    "src": "miccheck_SCAnimal_noloop.gif",
+                    "position": "fill"
+                },
+                {
+                    "id": "frame5",
+                    "src": "animalintro_part1_SCAnimal_noloop.gif",
+                    "position": "fill"
+                },
+                {
+                    "id": "frame6",
+                    "src": "animalintro_part2_SCAnimal_noloop.gif",
+                    "position": "fill"
+                },
+                {
+                    "id": "frame7",
+                    "src": "animalintro_part3_SCAnimal_noloop.gif",
+                    "position": "fill"
+                },
+                {
+                    "id": "frame8",
+                    "src": "color1_parent_SCAnimal_noloop.gif",
+                    "position": "fill"
+                },
+                {
+                    "id": "frame9",
+                    "src": "food1_SCAnimal_noloop.gif",
+                    "position": "fill"
+                },
+                {
+                    "id": "frame10",
+                    "src": "activity1_SCAnimal_noloop.gif",
+                    "position": "fill"
+                },
+                {
+                    "id": "frame11",
+                    "src": "results1_SCAnimal_noloop.gif",
+                    "position": "fill"
+                },
+                {
+                    "id": "frame12",
+                    "src": "color2_parent_SCAnimal_noloop.gif",
+                    "position": "fill"
+                },
+                {
+                    "id": "frame13",
+                    "src": "food2_SCAnimal_noloop.gif",
+                    "position": "fill"
+                },
+                {
+                    "id": "frame14",
+                    "src": "activity2_SCAnimal_noloop.gif",
+                    "position": "fill"
+                },
+                {
+                    "id": "frame15",
+                    "src": "results2_SCAnimal_noloop.gif",
+                    "position": "fill"
+                },
+                {
+                    "id": "frame16",
+                    "src": "choice_parentfirst_part1_SCAnimal_noloop.gif",
+                    "position": "fill"
+                },
+                {
+                    "id": "frame17",
+                    "src": "choice_parentfirst_part2_SCAnimal_noloop.gif",
+                    "position": "fill"
+                }
+            ],
+            "baseDir": "https://raw.githubusercontent.com/pzhu222/sc_animal_lookit_public/main/",
+            "autoProceed": false,
+            "doRecording": false,
+            "parentTextBlock": {
+                "text": "parents please wait this is loading",
+                "title": "For parents"
+            }
+        },
+        "welcome": {
+            "kind": "exp-lookit-images-audio",
+            "audio": "welcome_SCAnimal",
+            "images": [
+                {
+                    "id": "welcome",
+                    "src": "welcome_SCAnimal_noloop.gif",
+                    "position": "fill"
+                }
+            ],
+            "baseDir": "https://raw.githubusercontent.com/pzhu222/sc_animal_lookit_public/main/",
+            "audioTypes": [
+                "mp3",
+                "ogg"
+            ],
+            "autoProceed": false,
+            "doRecording": false,
+            "parentTextBlock": {
+                "text": "Some explanatory text for parents",
+                "title": "For parents"
+            }
+        },
+        "mouse-check-1": {
+            "kind": "exp-lookit-images-audio",
+            "audio": "mousecheck_part2_SCAnimal",
+            "images": [
+                {
+                    "id": "mousecheck",
+                    "src": "mousecheck_part1_SCAnimal_noloop.gif",
+                    "position": "fill"
+                }
+            ],
+            "baseDir": "https://raw.githubusercontent.com/pzhu222/sc_animal_lookit_public/main/",
+            "audioTypes": [
+                "mp3",
+                "ogg"
+            ],
+            "autoProceed": false,
+            "doRecording": false,
+            "parentTextBlock": {
+                "text": "Some explanatory text for parents",
+                "title": "For parents"
+            }
+        },
+        "mouse-check-2": {
+            "kind": "exp-lookit-images-audio",
+            "audio": "mousecheck_part1_SCAnimal",
+            "images": [
+                {
+                    "id": "mousecheck",
+                    "src": "mousecheck_part2_SCAnimal_noloop.gif",
+                    "position": "fill"
+                }
+            ],
+            "baseDir": "https://raw.githubusercontent.com/pzhu222/sc_animal_lookit_public/main/",
+            "audioTypes": [
+                "mp3",
+                "ogg"
+            ],
+            "autoProceed": false,
+            "doRecording": false,
+            "parentTextBlock": {
+                "text": "Some explanatory text for parents",
+                "title": "For parents"
+            }
+        },
+        "mic-check": {
+            "kind": "exp-lookit-images-audio",
+            "audio": "miccheck_SCAnimal",
+            "images": [
+                {
+                    "id": "miccheck",
+                    "src": "miccheck_SCAnimal_noloop.gif",
+                    "position": "fill"
+                }
+            ],
+            "baseDir": "https://raw.githubusercontent.com/pzhu222/sc_animal_lookit_public/main/",
+            "audioTypes": [
+                "mp3",
+                "ogg"
+            ],
+            "autoProceed": false,
+            "doRecording": false,
+            "parentTextBlock": {
+                "text": "Some explanatory text for parents",
+                "title": "For parents"
+            }
+        },
+        "animal-intro-1": {
+            "kind": "exp-lookit-images-audio",
+            "audio": "animalintro_part1_SCAnimal",
+            "images": [
+                {
+                    "id": "animalintro",
+                    "src": "animalintro_part1_SCAnimal_noloop.gif",
+                    "position": "fill"
+                }
+            ],
+            "baseDir": "https://raw.githubusercontent.com/pzhu222/sc_animal_lookit_public/main/",
+            "audioTypes": [
+                "mp3",
+                "ogg"
+            ],
+            "autoProceed": false,
+            "doRecording": false,
+            "parentTextBlock": {
+                "text": "Some explanatory text for parents",
+                "title": "For parents"
+            }
+        },
+        "animal-intro-2": {
+            "kind": "exp-lookit-images-audio",
+            "audio": "animalintro_part2_SCAnimal",
+            "images": [
+                {
+                    "id": "animalintro",
+                    "src": "animalintro_part2_SCAnimal_noloop.gif",
+                    "position": "fill"
+                }
+            ],
+            "baseDir": "https://raw.githubusercontent.com/pzhu222/sc_animal_lookit_public/main/",
+            "audioTypes": [
+                "mp3",
+                "ogg"
+            ],
+            "autoProceed": false,
+            "doRecording": false,
+            "parentTextBlock": {
+                "text": "Some explanatory text for parents",
+                "title": "For parents"
+            }
+        },
+        "animal-intro-3": {
+            "kind": "exp-lookit-images-audio",
+            "audio": "animalintro_part3_SCAnimal",
+            "images": [
+                {
+                    "id": "animalintro",
+                    "src": "animalintro_part3_SCAnimal_noloop.gif",
+                    "position": "fill"
+                }
+            ],
+            "baseDir": "https://raw.githubusercontent.com/pzhu222/sc_animal_lookit_public/main/",
+            "audioTypes": [
+                "mp3",
+                "ogg"
+            ],
+            "autoProceed": false,
+            "doRecording": false,
+            "parentTextBlock": {
+                "text": "Some explanatory text for parents",
+                "title": "For parents"
+            }
+        },
+        "color1-parent": {
+            "kind": "exp-lookit-images-audio",
+            "audio": "choice_parentfirst_part1_SCAnimal",
+            "images": [
+                {
+                    "id": "color1",
+                    "src": "color1_parent_SCAnimal_noloop.gif",
+                    "position": "fill"
+                }
+            ],
+            "baseDir": "https://raw.githubusercontent.com/pzhu222/sc_animal_lookit_public/main/",
+            "audioTypes": [
+                "mp3",
+                "ogg"
+            ],
+            "autoProceed": false,
+            "doRecording": false,
+            "parentTextBlock": {
+                "text": "Some explanatory text for parents",
+                "title": "For parents"
+            }
+        },
+        "food1": {
+            "kind": "exp-lookit-images-audio",
+            "audio": "food1_SCAnimal",
+            "images": [
+                {
+                    "id": "food1",
+                    "src": "food1_SCAnimal_noloop.gif",
+                    "position": "fill"
+                }
+            ],
+            "baseDir": "https://raw.githubusercontent.com/pzhu222/sc_animal_lookit_public/main/",
+            "audioTypes": [
+                "mp3",
+                "ogg"
+            ],
+            "autoProceed": false,
+            "doRecording": false,
+            "parentTextBlock": {
+                "text": "Some explanatory text for parents",
+                "title": "For parents"
+            }
+        },
+        "activity1": {
+            "kind": "exp-lookit-images-audio",
+            "audio": "food1_SCAnimal",
+            "images": [
+                {
+                    "id": "activity1",
+                    "src": "activity1_SCAnimal_noloop.gif",
+                    "position": "fill"
+                }
+            ],
+            "baseDir": "https://raw.githubusercontent.com/pzhu222/sc_animal_lookit_public/main/",
+            "audioTypes": [
+                "mp3",
+                "ogg"
+            ],
+            "autoProceed": false,
+            "doRecording": false,
+            "parentTextBlock": {
+                "text": "Some explanatory text for parents",
+                "title": "For parents"
+            }
+        },
+        "results1": {
+            "kind": "exp-lookit-images-audio",
+            "audio": "food1_SCAnimal",
+            "images": [
+                {
+                    "id": "results1",
+                    "src": "results1_SCAnimal_noloop.gif",
+                    "position": "fill"
+                }
+            ],
+            "baseDir": "https://raw.githubusercontent.com/pzhu222/sc_animal_lookit_public/main/",
+            "audioTypes": [
+                "mp3",
+                "ogg"
+            ],
+            "autoProceed": false,
+            "doRecording": false,
+            "parentTextBlock": {
+                "text": "Some explanatory text for parents",
+                "title": "For parents"
+            }
+        },
+        "color2-parent": {
+            "kind": "exp-lookit-images-audio",
+            "audio": "color2_parent_SCAnimal",
+            "images": [
+                {
+                    "id": "color2",
+                    "src": "color2_parent_SCAnimal_noloop.gif",
+                    "position": "fill"
+                }
+            ],
+            "baseDir": "https://raw.githubusercontent.com/pzhu222/sc_animal_lookit_public/main/",
+            "audioTypes": [
+                "mp3",
+                "ogg"
+            ],
+            "autoProceed": false,
+            "doRecording": false,
+            "parentTextBlock": {
+                "text": "Some explanatory text for parents",
+                "title": "For parents"
+            }
+        },
+        "food2": {
+            "kind": "exp-lookit-images-audio",
+            "audio": "food2_SCAnimal",
+            "images": [
+                {
+                    "id": "food2",
+                    "src": "food2_SCAnimal_noloop.gif",
+                    "position": "fill"
+                }
+            ],
+            "baseDir": "https://raw.githubusercontent.com/pzhu222/sc_animal_lookit_public/main/",
+            "audioTypes": [
+                "mp3",
+                "ogg"
+            ],
+            "autoProceed": false,
+            "doRecording": false,
+            "parentTextBlock": {
+                "text": "Some explanatory text for parents",
+                "title": "For parents"
+            }
+        },
+        "activity2": {
+            "kind": "exp-lookit-images-audio",
+            "audio": "activity2_SCAnimal",
+            "images": [
+                {
+                    "id": "activity2",
+                    "src": "activity2_SCAnimal_noloop.gif",
+                    "position": "fill"
+                }
+            ],
+            "baseDir": "https://raw.githubusercontent.com/pzhu222/sc_animal_lookit_public/main/",
+            "audioTypes": [
+                "mp3",
+                "ogg"
+            ],
+            "autoProceed": false,
+            "doRecording": false,
+            "parentTextBlock": {
+                "text": "Some explanatory text for parents",
+                "title": "For parents"
+            }
+        },
+        "results2": {
+            "kind": "exp-lookit-images-audio",
+            "audio": "results2_SCAnimal",
+            "images": [
+                {
+                    "id": "results2",
+                    "src": "results2_SCAnimal_noloop.gif",
+                    "position": "fill"
+                }
+            ],
+            "baseDir": "https://raw.githubusercontent.com/pzhu222/sc_animal_lookit_public/main/",
+            "audioTypes": [
+                "mp3",
+                "ogg"
+            ],
+            "autoProceed": false,
+            "doRecording": false,
+            "parentTextBlock": {
+                "text": "Some explanatory text for parents",
+                "title": "For parents"
+            }
+        },
+        "choice-parent-1": {
+            "kind": "exp-lookit-images-audio",
+            "audio": "choice_parentfirst_part1_SCAnimal",
+            "images": [
+                {
+                    "id": "choiceparent1",
+                    "src": "choice_parentfirst_part1_SCAnimal_noloop.gif",
+                    "position": "fill"
+                }
+            ],
+            "baseDir": "https://raw.githubusercontent.com/pzhu222/sc_animal_lookit_public/main/",
+            "audioTypes": [
+                "mp3",
+                "ogg"
+            ],
+            "autoProceed": false,
+            "doRecording": false,
+            "parentTextBlock": {
+                "text": "Some explanatory text for parents",
+                "title": "For parents"
+            }
+        },
+        "choice-parent-2": {
+            "kind": "exp-lookit-images-audio",
+            "images": [
+                {
+                    "id": "choiceparent2",
+                    "src": "https://web.stanford.edu/group/gweonlab/results1_SCAnimal_noloop.gif",
+                    "position": "fill"
+                }
+            ],
+            "autoProceed": false,
+            "doRecording": false,
+            "parentTextBlock": {
+                "text": "Some explanatory text for parents",
+                "title": "For parents"
+            }
+        },
+        "choice-parent-2-github": {
+            "kind": "exp-lookit-images-audio",
+            "images": [
+                {
+                    "id": "choiceparent2",
+                    "src": "results1_SCAnimal_noloop.gif",
+                    "position": "fill"
+                }
+            ],
+            "baseDir": "https://raw.githubusercontent.com/pzhu222/sc_animal_lookit_public/main/",
+            "autoProceed": false,
+            "doRecording": false,
+            "parentTextBlock": {
+                "text": "Some explanatory text for parents",
+                "title": "For parents"
+            }
+        }
+    },
+    "sequence": [
+        "video-config",
+        "welcome",
+        "mouse-check-1",
+        "mouse-check-2",
+        "mic-check",
+        "animal-intro-1",
+        "animal-intro-2",
+        "animal-intro-3",
+        "color1-parent",
+        "food1",
+        "activity1",
+        "results1",
+        "color2-parent",
+        "food2",
+        "activity2",
+        "results2",
+        "choice-parent-1",
+        "choice-parent-2",
+        "choice-parent-2-github"
+    ]
+}
