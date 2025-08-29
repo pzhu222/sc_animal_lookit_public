@@ -13,9 +13,9 @@ OUTPUT_FOLDER="$(dirname "$INPUT_FOLDER")/img"
 mkdir -p "$OUTPUT_FOLDER"
 
 # Settings (adjust these as needed)
-FPS=20
+FPS=15
 SCALE=640
-MAX_COLORS=200
+MAX_COLORS=100
 
 echo "Processing MP4 files from: $INPUT_FOLDER"
 echo "Output folder: $OUTPUT_FOLDER"
@@ -71,7 +71,7 @@ for mp4_file in "$INPUT_FOLDER"/*.mp4; do
     if [ $final_size -gt 100000000 ]; then
         echo "  WARNING: Final GIF is ${final_size_mb}MB (exceeds GitHub 100MB limit)"
     else
-        echo "  SUCCESS: Created ${filename}_noloop_20fps.gif (${final_size_mb}MB)"
+        echo "  SUCCESS: Created ${filename}_noloop.gif (${final_size_mb}MB)"
     fi
     
     # Clean up temp file
