@@ -15,7 +15,7 @@ mkdir -p "$OUTPUT_FOLDER"
 # Settings (adjust these as needed)
 FPS=10
 SCALE=640
-MAX_COLORS=80
+MAX_COLORS=200
 
 echo "Processing MP4 files from: $INPUT_FOLDER"
 echo "Output folder: $OUTPUT_FOLDER"
