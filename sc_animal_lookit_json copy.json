@@ -1,0 +1,414 @@
+{
+    "frames": {
+        "welcome": {
+            "kind": "exp-lookit-text",
+            "blocks": [
+                {
+                    "title": "Welcome!"
+                },
+                {
+                    "text": "Thank you for your interest in our study, 'What kind of animal are you?'."
+                },
+                {
+                    "text": "Here's a quick summary of what's about to happen:"
+                },
+                {
+                    "text": "1. Webcam Setup and Video Consent: First, we'll be checking that your webcam is working. Then you and your child will give your consent to participate in this research."
+                },
+                {
+                    "text": "2. Study Overview and Important Message for Parents: Here, you can read a little more about what your child will be doing in this study, along with some other important details about the game."
+                },
+                {
+                    "text": "3. Start the Study: When you click the 'Start the game!' button, the study will begin! This study will take about 15 minutes in total."
+                },
+                {
+                    "text": "Thank you so much for helping us with our science! We hope you and your child have fun."
+                }
+            ],
+            "showPreviousButton": false
+        },
+        "video-config": {
+            "kind": "exp-video-config"
+        },
+        "video-consent": {
+            "kind": "exp-lookit-video-consent",
+            "template": "consent_005",
+            "PIName": "Hyowon Gweon",
+            "institution": "Stanford University",
+            "PIContact": "Hyowon Gweon at hyo@stanford.edu",
+            "purpose": "Can children be surprised by what appear to be the outcomes of their own actions? This study will help us find out whether children can reason about themselves as causal agents in a way complex enough to include surprise.",
+            "procedures": "Your child will be shown pictures of different kinds of cards and asked to select certain ones. We are interested in your child's reaction to the results of their selections. We will ask you (the parent) to let your child make their own decisions. We also ask that you refrain from influencing their response by expressing an emotional reaction of your own.",
+            "risk_statement": "There are no expected risks if you participate in the study.",
+            "voluntary_participation": "Participation in this study is entirely optional, and you are free to exit at any time.",
+            "payment": "After you finish the study, we will email you a $5 ______ gift card within approximately three days. To be eligible for the gift card your child must be in the age range for this study, you need to submit a valid consent statement, and we need to see that there is a child with you. But we will send a gift card even if you do not finish the whole study or we are not able to use your child's data! There are no other direct benefits to you or your child from participating, but we hope you will enjoy the experience.",
+            "datause": "We are primarily interested in your child's emotional and verbal responses to the results of the card game. A research assistant will watch your video to assess the amount of surprise your child displays.",
+            "include_databrary": true,
+            "gdpr": false,
+            "research_rights_statement": "You are not waiving any legal claims, rights or remedies because of your participation in this research study.  If you feel you have been treated unfairly, or you have questions regarding your rights as a research subject, you may contact the [IRB NAME], [INSTITUTION], [ADDRESS/CONTACT]",
+            "additional_segments": [
+                {
+                    "title": "US Patriot Act Disclosure",
+                    "text": "[EXAMPLE ONLY, PLEASE REMOVE ADDITIONAL_SEGMENTS UNLESS YOU NEED THEM.] Lookit is a U.S. organization and all information gathered from the website is stored on servers based in the U.S. Therefore, your video recordings are subject to U.S. laws, such as the US Patriot Act. This act allows authorities access to the records of internet service providers. If you choose to participate in this study, you understand that your video recording will be stored and accessed in the USA. The security and privacy policy for Lookit can be found at the following link: <a href='https://lookit.mit.edu/privacy/' target='_blank' rel='noopener'>https://lookit.mit.edu/privacy/</a>."
+                }
+            ]
+        },
+        "positioning": {
+            "kind": "exp-video-config-quality",
+            "title": "Positioning",
+            "introText": "It's time to get your child & check yourself out!",
+            "showRecordMenu": false,
+            "requireTestVideo": false,
+            "completedItemText": "Got it!",
+            "instructionBlocks": [
+                {
+                    "text": "You and your child can sit in any position.",
+                    "title": "Get comfortable"
+                },
+                {
+                    "text": "Go ahead and get settled and use the webcam preview to make sure your child’s whole face and torso are in view.",
+                    "title": "Take a few moments"
+                },
+                {
+                    "text": "Press the 'Next' button down below if you and your child are in position and ready to go.",
+                    "title": "When you're ready"
+                }
+            ],
+            "nextButtonText": "My child and I are in position and ready to start!",
+            "showPreviousButton": true,
+            "requireItemConfirmation": true,
+            "recordingInstructionText": ""
+        },
+        "start-recording": {
+            "kind": "exp-lookit-start-recording",
+            "imageAnimation": "spin",
+            "displayFullscreen": true
+        },
+        "stop-recording": {
+            "kind": "exp-lookit-stop-recording",
+            "imageAnimation": "spin",
+            "displayFullscreen": true
+        },
+        "trials": {
+            "kind": "choice",
+            "sampler": "random-parameter-set",
+            "commonFrameProperties": {
+                "kind": "exp-lookit-images-audio",
+                "audioTypes": [
+                    "mp3",
+                    "ogg"
+                ],
+                "baseDir": "https://raw.githubusercontent.com/pzhu222/sc_animal_lookit_public/main/",
+                "doRecording": false,
+                "autoProceed": false,
+                "canMakeChoiceBeforeAudioFinished": false,
+                "showReplayButton": false,
+                "showPreviousButton": false
+            },
+            "frameList": [
+                {
+                    "id": "welcome",
+                    "images": [
+                        {
+                            "id": "welcome",
+                            "src": "welcome_SCAnimal_noloop.gif",
+                            "position": "fill"
+                        }
+                    ],
+                    "audio": "welcome_SCAnimal",
+                    "parentTextBlock": {
+                        "text": "Please help your child attend back to the video if they miss anything, and avoid influencing your child's response. As the videos are large, they may take a moment to load."
+                    }
+                },
+                {
+                    "id": "parentinstructions",
+                    "images": [
+                        {
+                            "id": "parentinstruction",
+                            "src": "parentinstruction_SCAnimal.png",
+                            "position": "fill"
+                        }
+                    ],
+                    "audio": "parentinstruction_SCAnimal",
+                    "parentTextBlock": {
+                        "text": "Text will appear below here, inside of a blue box, with a prompt for you to say to your child.",
+                        "backgroundColor": "green"
+                    }
+                },
+                {
+                    "id": "mousecheck1",
+                    "images": [
+                        {
+                            "id": "mousecheck1",
+                            "src": "mousecheck_part1_SCAnimal_noloop.gif",
+                            "position": "fill"
+                        }
+                    ],
+                    "audio": "mousecheck_part2_SCAnimal",
+                    "parentTextBlock": {
+                        "text": "Please help your child attend back to the video if they miss anything, and avoid influencing your child's response. As the videos are large, they may take a moment to load."
+                    }
+                },
+                {
+                    "id": "mousecheck2",
+                    "choiceRequired": true,
+                    "images": [
+                        {
+                            "id": "mousecheck2",
+                            "src": "mousecheck_part2_SCAnimal_noloop.gif",
+                            "position": "fill",
+                            "nonChoiceOption": true
+                        },
+                        {
+                            "id": "animalgame",
+                            "src": "transparent.png",
+                            "height": 50,
+                            "left": 15,
+                            "top": 10,
+                            "displayDelayMs": 7980
+                        },
+                        {
+                            "id": "artgame",
+                            "src": "transparent.png",
+                            "height": 50,
+                            "left": 61,
+                            "top": 10,
+                            "displayDelayMs": 10140
+                        }
+                    ],
+                    "audio": "mousecheck_part1_SCAnimal",
+                    "parentTextBlock": {
+                        "text": "Please help your child attend back to the video if they miss anything, and avoid influencing your child's response. As the videos are large, they may take a moment to load."
+                    }
+                },
+                {
+                    "id": "miccheck",
+                    "doRecording": true,
+                    "images": [
+                        {
+                            "id": "miccheck",
+                            "src": "miccheck_SCAnimal_noloop.gif",
+                            "position": "fill"
+                        }
+                    ],
+                    "audio": "miccheck_SCAnimal",
+                    "parentTextBlock": {
+                        "text": "Please help your child attend back to the video if they miss anything, and avoid influencing your child's response. As the videos are large, they may take a moment to load."
+                    }
+                },
+                {
+                    "id": "animalintro1",
+                    "images": [
+                        {
+                            "id": "animalintro1",
+                            "src": "animalintro_part1_SCAnimal_noloop.gif",
+                            "position": "fill"
+                        }
+                    ],
+                    "audio": "animalintro_part1_SCAnimal",
+                    "parentTextBlock": {
+                        "text": "Please help your child attend back to the video if they miss anything, and avoid influencing your child's response. As the videos are large, they may take a moment to load."
+                    }
+                },
+                {
+                    "id": "animalintro2",
+                    "images": [
+                        {
+                            "id": "animalintro2",
+                            "src": "animalintro_part2_SCAnimal_noloop.gif",
+                            "position": "fill"
+                        }
+                    ],
+                    "audio": "animalintro_part2_SCAnimal",
+                    "parentTextBlock": {
+                        "text": "Please help your child attend back to the video if they miss anything, and avoid influencing your child's response. As the videos are large, they may take a moment to load."
+                    }
+                },
+                {
+                    "id": "animalintro3",
+                    "images": [
+                        {
+                            "id": "animalintro1",
+                            "src": "animalintro_part3_SCAnima_noloop.gif",
+                            "position": "fill"
+                        }
+                    ],
+                    "audio": "animalintro_part3_SCAnimal",
+                    "parentTextBlock": {
+                        "text": "Please help your child attend back to the video if they miss anything, and avoid influencing your child's response. As the videos are large, they may take a moment to load."
+                    }
+                },
+                {
+                    "id": "color1",
+                    "images": [
+                        {
+                            "id": "color1",
+                            "src": "COLOR1_CONDITION_GIF",
+                            "position": "fill"
+                        }
+                    ],
+                    "audio": "COLOR1_CONDITION_AUDIO",
+                    "parentTextBlock": {
+                        "text": "Please help your child attend back to the video if they miss anything, and avoid influencing your child's response. As the videos are large, they may take a moment to load."
+                    }
+                },
+                {
+                    "id": "food1",
+                    "images": [
+                        {
+                            "id": "food1",
+                            "src": "food1_SCAnimal_noloop.gif",
+                            "position": "fill"
+                        }
+                    ],
+                    "audio": "food1_SCAnimal",
+                    "parentTextBlock": {
+                        "text": "Please help your child attend back to the video if they miss anything, and avoid influencing your child's response. As the videos are large, they may take a moment to load."
+                    }
+                },
+                {
+                    "id": "activity1",
+                    "images": [
+                        {
+                            "id": "activity1",
+                            "src": "activity1_SCAnimal_noloop.gif",
+                            "position": "fill"
+                        }
+                    ],
+                    "audio": "activity1_SCAnimal",
+                    "parentTextBlock": {
+                        "text": "Please help your child attend back to the video if they miss anything, and avoid influencing your child's response. As the videos are large, they may take a moment to load."
+                    }
+                },
+                {
+                    "id": "results1",
+                    "images": [
+                        {
+                            "id": "results1",
+                            "src": "results1_SCAnimal_noloop.gif",
+                            "position": "fill"
+                        }
+                    ],
+                    "audio": "results1_SCAnimal",
+                    "parentTextBlock": {
+                        "text": "Please help your child attend back to the video if they miss anything, and avoid influencing your child's response. As the videos are large, they may take a moment to load."
+                    }
+                },
+                {
+                    "id": "color2",
+                    "images": [
+                        {
+                            "id": "color2",
+                            "src": "COLOR2_CONDITION_GIF",
+                            "position": "fill"
+                        }
+                    ],
+                    "audio": "COLOR2_CONDITION_AUDIO",
+                    "parentTextBlock": {
+                        "text": "Please help your child attend back to the video if they miss anything, and avoid influencing your child's response. As the videos are large, they may take a moment to load."
+                    }
+                },
+                {
+                    "id": "food2",
+                    "images": [
+                        {
+                            "id": "food2",
+                            "src": "food2_SCAnimal_noloop.gif",
+                            "position": "fill"
+                        }
+                    ],
+                    "audio": "food2_SCAnimal",
+                    "parentTextBlock": {
+                        "text": "Please help your child attend back to the video if they miss anything, and avoid influencing your child's response. As the videos are large, they may take a moment to load."
+                    }
+                },
+                {
+                    "id": "activity2",
+                    "images": [
+                        {
+                            "id": "activity2",
+                            "src": "activity2_SCAnimal_noloop.gif",
+                            "position": "fill"
+                        }
+                    ],
+                    "audio": "activity2_SCAnimal",
+                    "parentTextBlock": {
+                        "text": "Please help your child attend back to the video if they miss anything, and avoid influencing your child's response. As the videos are large, they may take a moment to load."
+                    }
+                },
+                {
+                    "id": "results2",
+                    "images": [
+                        {
+                            "id": "results2",
+                            "src": "results2_SCAnimal_noloop.gif",
+                            "position": "fill"
+                        }
+                    ],
+                    "audio": "results2_SCAnimal",
+                    "parentTextBlock": {
+                        "text": "Please help your child attend back to the video if they miss anything, and avoid influencing your child's response. As the videos are large, they may take a moment to load."
+                    }
+                },
+                {
+                    "id": "choice1",
+                    "images": [
+                        {
+                            "id": "choice1",
+                            "src": "CHOICE1_CONDITION_GIF",
+                            "position": "fill"
+                        }
+                    ],
+                    "audio": "CHOICE1_CONDITION_AUDIO",
+                    "parentTextBlock": {
+                        "text": "Please ..."
+                    }
+                },
+                {
+                    "id": "choice2",
+                    "images": [
+                        {
+                            "id": "choice2",
+                            "src": "CHOICE2_CONDITION_GIF",
+                            "position": "fill"
+                        }
+                    ],
+                    "audio": "CHOICE2_CONDITION_AUDIO",
+                    "parentTextBlock": {
+                        "text": "Please help your child attend back to the video if they miss anything, and avoid influencing your child's response. As the videos are large, they may take a moment to load."
+                    }
+                }
+            ],
+            "parameterSets": [
+                {
+                    "COLOR1_CONDITION_GIF": "color2_parent_SCAnimal_noloop.gif",
+                    "COLOR1_CONDITION_AUDIO": "color2_parent_SCAnimal",
+                    "COLOR2_CONDITION_GIF": "color2_self_SCAnimal_noloop.gif",
+                    "COLOR2_CONDITION_AUDIO": "color2_self_SCAnimal",
+                    "CHOICE1_CONDITION_GIF": "choice_parentfirst_part1_SCAnimal_noloop.gif",
+                    "CHOICE1_CONDITION_AUDIO": "choice_parentfirst_part1_SCAnimal",
+                    "CHOICE2_CONDITION_GIF": "choice_parentfirst_part2_SCAnimal_noloop.gif",
+                    "CHOICE2_CONDITION_AUDIO": "choice_parentfirst_part2_SCAnimal"
+                },
+                {
+                    "COLOR1_CONDITION_GIF": "color2_self_SCAnimal_noloop.gif",
+                    "COLOR1_CONDITION_AUDIO": "color2_self_SCAnimal",
+                    "COLOR2_CONDITION_GIF": "color2_parent_SCAnimal_noloop.gif",
+                    "COLOR2_CONDITION_AUDIO": "color2_parent_SCAnimal",
+                    "CHOICE1_CONDITION_GIF": "choice_selffirst_part1_SCAnimal_noloop.gif",
+                    "CHOICE1_CONDITION_AUDIO": "choice_selffirst_part1_SCAnimal",
+                    "CHOICE2_CONDITION_GIF": "choice_selffirst_part2_SCAnimal_noloop.gif",
+                    "CHOICE2_CONDITION_AUDIO": "choice_selffirst_part2_SCAnimal"
+                }
+            ]
+        }
+    },
+    "sequence": [
+        "welcome",
+        "video-config",
+        "video-consent",
+        "positioning",
+        "start-recording",
+        "trials",
+        "stop-recording"
+    ]
+}
