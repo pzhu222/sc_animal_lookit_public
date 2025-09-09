@@ -34,15 +34,6 @@ function generateProtocol(child, pastSessions) {
             ],
             "showPreviousButton": false
         },
-        "trial1": {
-            "kind": "exp-lookit-video",
-            "video": {"source": "miccheck_SCAnimal", "width": 100},
-            "baseDir": "https://raw.githubusercontent.com/pzhu222/sc_animal_lookit_public/main/",
-            "videoTypes": [
-                "webm",
-                "mp4"],
-            "autoProceed": true
-        },
         "video-config": {
             "kind": "exp-video-config"
         },
@@ -100,6 +91,7 @@ function generateProtocol(child, pastSessions) {
     };
 
     const trials_self = {
+        "kind": "group",
         "commonFrameProperties": {
             "baseDir": "https://raw.githubusercontent.com/pzhu222/sc_animal_lookit_public/main/",
             "videoTypes": ["webm", "mp4"],
@@ -107,19 +99,22 @@ function generateProtocol(child, pastSessions) {
             "autoProceed": false,
             "canMakeChoiceBeforeAudioFinished": false,
             "showReplayButton": false,
-            "showPreviousButton": false
-    },
-        "frameList": [
-            {
+            "showPreviousButton": false,
+        },
+        "frameList": [{
                 "id": "welcome",
                 "kind": "exp-lookit-video",
                 "videoTypes": ["webm", "mp4"],
-                "video": {"source": "welcome_SCAnimal", "width": 100},
+                "video": {
+                    "source": "welcome_SCAnimal",
+                    "width": 100
+                },
                 "parentTextBlock": {
                     "text": "Please help your child attend back to the video if they miss anything, and avoid influencing your child's response. As the videos are large, they may take a moment to load."
                 }
             },
             {
+                "kind": "exp-lookit-images-audio",
                 "id": "parentinstructions",
                 "images": [{
                     "id": "parentinstruction",
@@ -128,16 +123,75 @@ function generateProtocol(child, pastSessions) {
                 }],
                 "audio": "parentinstruction_SCAnimal",
                 "parentTextBlock": {
-                    "text": "Text will appear below here, inside of a blue box, with a prompt for you to say to your child.",
-                    "backgroundColor": "green"
+                    "text": "Text will appear below here, inside of a green box, with a prompt for you to say to your child.",
+                    "css": {"backgroundColor": "green",
+                        "color": "white"
+                    }
                 }
             },
             {
                 "id": "mousecheck1",
                 "kind": "exp-lookit-video",
+                "videoTypes": ["webm", "mp4"],
+                "video": {
+                    "source": "mousecheck_part2_SCAnimal",
+                    "width": 100
+                },
+                "parentTextBlock": {
+                    "text": "Please help your child attend back to the video if they miss anything, and avoid influencing your child's response. As the videos are large, they may take a moment to load."
+                }
+            },
+                        {
+                "id": "mousecheck2",
+                "kind": "exp-lookit-video",
                 "autoProceed": true,
                 "videoTypes": ["webm", "mp4"],
-                "video": {"source": "mousecheck_part2_SCAnimal", "width": 100},
+                "video": {
+                    "source": "mousecheck_part1_SCAnimal_short",
+                    "width": 100
+                },
+                "parentTextBlock": {
+                    "text": "Please help your child attend back to the video if they miss anything, and avoid influencing your child's response. As the videos are large, they may take a moment to load."
+                }
+            },
+            {
+                "id": "mousecheck-question",
+                "kind": "exp-lookit-images-audio",
+                "audio": "useyourmouse",
+                "audioTypes": ["mp3", "ogg"],
+                "choiceRequired": true,
+                "images": [
+                    {
+                        "id": "mousecheckquestion",
+                        "src": "mousecheck_finalquestion.png",
+                        "position": "fill",
+                                                "nonChoiceOption": true
+                    },
+                    {
+                        "id": "animalgame",
+                        "src": "transparent.png",
+                        "height": 50,
+                        "left": 15,
+                        "top": 10
+                    },
+                    {
+                        "id": "artgame",
+                        "src": "transparent.png",
+                        "height": 50,
+                        "left": 61,
+                        "top": 10
+                    }
+                ]
+            },
+                        {
+                "id": "miccheck-question",
+                "kind": "exp-lookit-video",
+                "autoProceed": false,
+                "videoTypes": ["webm", "mp4"],
+                "video": {
+                    "source": "miccheck_SCAnimal",
+                    "width": 100
+                },
                 "parentTextBlock": {
                     "text": "Please help your child attend back to the video if they miss anything, and avoid influencing your child's response. As the videos are large, they may take a moment to load."
                 }
@@ -146,7 +200,8 @@ function generateProtocol(child, pastSessions) {
     };
 
     const trials_other = {
-               "commonFrameProperties": {
+        "kind": "group",
+        "commonFrameProperties": {
             "baseDir": "https://raw.githubusercontent.com/pzhu222/sc_animal_lookit_public/main/",
             "videoTypes": ["webm", "mp4"],
             "doRecording": false,
@@ -154,19 +209,22 @@ function generateProtocol(child, pastSessions) {
             "canMakeChoiceBeforeAudioFinished": false,
             "showReplayButton": false,
             "showPreviousButton": false
-    },
-        "frameList": [
-            {
+        },
+        "frameList": [{
                 "id": "welcome",
                 "kind": "exp-lookit-video",
                 "videoTypes": ["webm", "mp4"],
-                "video": {"source": "welcome_SCAnimal", "width": 100},
+                "video": {
+                    "source": "welcome_SCAnimal",
+                    "width": 100
+                },
                 "parentTextBlock": {
                     "text": "Please help your child attend back to the video if they miss anything, and avoid influencing your child's response. As the videos are large, they may take a moment to load."
                 }
             },
             {
                 "id": "parentinstructions",
+                "kind": "exp-lookit-images-audio",
                 "images": [{
                     "id": "parentinstruction",
                     "src": "parentinstruction_SCAnimal.png",
@@ -174,16 +232,75 @@ function generateProtocol(child, pastSessions) {
                 }],
                 "audio": "parentinstruction_SCAnimal",
                 "parentTextBlock": {
-                    "text": "Text will appear below here, inside of a blue box, with a prompt for you to say to your child.",
-                    "backgroundColor": "green"
-                }
+                    "text": "Text will appear below here, inside of a green box, with a prompt for you to say to your child.",
+                    "css": {"backgroundColor": "green",
+                        "color": "white"
+                    }
             },
             {
                 "id": "mousecheck1",
                 "kind": "exp-lookit-video",
+                "autoProceed": false,
+                "videoTypes": ["webm", "mp4"],
+                "video": {
+                    "source": "mousecheck_part2_SCAnimal",
+                    "width": 100
+                },
+                "parentTextBlock": {
+                    "text": "Please help your child attend back to the video if they miss anything, and avoid influencing your child's response. As the videos are large, they may take a moment to load."
+                }
+            },
+            {
+                "id": "mousecheck2",
+                "kind": "exp-lookit-video",
                 "autoProceed": true,
                 "videoTypes": ["webm", "mp4"],
-                "video": {"source": "mousecheck_part2_SCAnimal", "width": 100},
+                "video": {
+                    "source": "mousecheck_part1_SCAnimal_short",
+                    "width": 100
+                },
+                "parentTextBlock": {
+                    "text": "Please help your child attend back to the video if they miss anything, and avoid influencing your child's response. As the videos are large, they may take a moment to load."
+                }
+            },
+            {
+                "id": "mousecheck-question",
+                "kind": "exp-lookit-images-audio",
+                "audio": "useyourmouse",
+                "audioTypes": ["mp3", "ogg"],
+                "choiceRequired": true,
+                "images": [
+                    {
+                        "id": "mousecheckquestion",
+                        "src": "mousecheck_finalquestion.png",
+                        "position": "fill",
+                        "nonChoiceOption": true
+                    },
+                    {
+                        "id": "animalgame",
+                        "src": "transparent.png",
+                        "height": 50,
+                        "left": 15,
+                        "top": 10
+                    },
+                    {
+                        "id": "artgame",
+                        "src": "transparent.png",
+                        "height": 50,
+                        "left": 61,
+                        "top": 10
+                    }
+                ]
+            },
+            {
+                "id": "miccheck-question",
+                "kind": "exp-lookit-video",
+                "autoProceed": false,
+                "videoTypes": ["webm", "mp4"],
+                "video": {
+                    "source": "miccheck_SCAnimal",
+                    "width": 100
+                },
                 "parentTextBlock": {
                     "text": "Please help your child attend back to the video if they miss anything, and avoid influencing your child's response. As the videos are large, they may take a moment to load."
                 }
