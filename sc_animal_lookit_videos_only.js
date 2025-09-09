@@ -1,4 +1,4 @@
-function generateProtocol(child, pastSessions) {
+function generateProtocol(child) {
     const options = ["selffirst", "otherfirst"];
     const condition = options[Math.floor(Math.random() * options.length)];
     console.log("Condition:", condition);
@@ -100,6 +100,7 @@ function generateProtocol(child, pastSessions) {
             "canMakeChoiceBeforeAudioFinished": false,
             "showReplayButton": false,
             "showPreviousButton": false,
+            "backgronundColor": "black"
         },
         "frameList": [{
                 "id": "welcome",
@@ -236,6 +237,7 @@ function generateProtocol(child, pastSessions) {
                     "css": {"backgroundColor": "green",
                         "color": "white"
                     }
+                }
             },
             {
                 "id": "mousecheck1",
